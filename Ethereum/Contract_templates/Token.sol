@@ -456,7 +456,7 @@ pragma solidity ^0.8.4;
       address[] private _excluded;
      
       uint256 private constant MAX = ~uint256(0);
-      uint256 private _tTotal = InitialSupply * 10**6 * 10**9;
+      uint256 private _tTotal = InitialSupply * 10**18;
       uint256 private _rTotal = (MAX - (MAX % _tTotal));
       uint256 private _tFeeTotal;
   
@@ -477,7 +477,7 @@ pragma solidity ^0.8.4;
       bool public swapAndLiquifyEnabled = true;
       
       uint256 public _maxTxAmount = _tTotal;
-      uint256 private numTokensSellToAddToLiquidity = 500000 * 10**6 * 10**9;
+      uint256 private numTokensSellToAddToLiquidity = 500000 * 10**18;
 
       address public routerAddress;
       

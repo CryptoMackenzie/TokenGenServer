@@ -21,7 +21,8 @@ const input = {
 const buildPath = path.resolve('Ethereum','build');
 const compileContracts = () => {
 
-    const compiledContracts = JSON.parse(solc.compile(JSON.stringify(input))).contracts;
+    const compiledContracts = JSON.parse(solc.compile(JSON.stringify(input))).contracts
+    console.log(compiledContracts)
 	
 	for (let contract in compiledContracts) {
 		for(let contractName in compiledContracts[contract]) {
@@ -34,6 +35,7 @@ const compileContracts = () => {
 			)
 		}
 	}
+	console.log("Contract compile successful")
 }
 
 export default compileContracts

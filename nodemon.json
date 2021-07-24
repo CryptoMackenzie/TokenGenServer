@@ -1,0 +1,4 @@
+{
+    "watch": ["App.mjs", "./Ethereum/contracts", "./Ethereum/build", "./Ethereum/TokenAddress"],
+    "ext": "js, json, ts, proto, sol, mjs"
+}
